@@ -7,4 +7,12 @@
 .jumbotron span {
   font-size: 2em;
 }
+
+.card-body img {
+  width: 6em;
+}
+
+.circle img {
+  width: 4em;
+}
 /*# sourceMappingURL=style.css.map */
