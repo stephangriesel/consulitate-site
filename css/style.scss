@@ -19,6 +19,13 @@
     width: 4em;
   }
 
+.page-section {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    height:100vh;
+}
+
 
 // Scroll to top
 
