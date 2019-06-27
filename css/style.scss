@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 .navbar-brand {
     font-family: 'Lato', sans-serif;    
     font-size: 2.2em;
@@ -26,6 +31,9 @@
     height:100vh;
 }
 
+#support-form {
+    height:30vh;
+}
 
 // Scroll to top
 
