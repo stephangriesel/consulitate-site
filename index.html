@@ -43,7 +43,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -68,7 +68,6 @@
         <div class="heading">
             <h1 class="display-4 ml-3">Our Clients.</h1>
         </div>
-
         <!-- Header: END-->
 
         <!-- Grid: START -->
@@ -292,33 +291,40 @@
         </div>
         <!-- Jumbotron Section: STOP-->
 
+        <!-- Header: START-->
+        <div class="heading">
+            <h1 class="display-4 ml-3">Contact.</h1>
+        </div>
+        <!-- Header: END-->
+
         <!-- Form: START-->
-        <form name="contact" class="needs-validation mb-3" novalidate netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
+        <form id="contact" name="contact" class="needs-validation mb-3" novalidate netlify netlify-honeypot="bot-field"
+            data-netlify-recaptcha="true">
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <!-- <label for="validationCustom01">First name</label> -->
-                    <input type="text" class="form-control" id="validationCustom01"
-                        placeholder="Your Name" name="name" required>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name" name="name"
+                        required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
                 </div>
                 <div class="col-md-4 mb-3">
                     <!-- <label for="validationCustom02">Last name</label> -->
-                    <input type="email" class="form-control" id="validationCustom02" placeholder="Your Email Address" name="email"
-                        required>
+                    <input type="email" class="form-control" id="validationCustom02" placeholder="Your Email Address"
+                        name="email" required>
                     <div class="valid-feedback">
                         Looks good!
                     </div>
                 </div>
             </div>
             <div class="form-group">
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Your Message"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"
+                    placeholder="Your Message"></textarea>
             </div>
             <button class="btn btn-dark mb-3" type="submit">Let's talk :)</button>
             <div data-netlify-recaptcha="true"></div>
         </form>
-
         <!-- Form: STOP-->
 
         <!-- Footer: START -->
@@ -329,9 +335,11 @@
         </div>
         <!-- Footer: STOP -->
 
-
-
     </div>
+
+    <!-- Go to top -->
+    <div onclick="topFunction()" id="go-to-top"><i class="fas fa-chevron-up"></i></i></div>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -341,6 +349,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>

@@ -20,3 +20,25 @@
   }
 
 
+// Scroll to top
+
+#go-to-top {
+    display: none;
+    position:fixed;
+    bottom:0;
+    right:2%;
+    font-size:2em;
+    cursor: pointer;
+}
+
+#go-to-top:hover {
+    transition: ease-in-out 0.8s;
+    color:#000;
+    position:fixed;
+    bottom:0;
+    right:2%;
+    transform: rotate(360deg);
+
+}
+
+

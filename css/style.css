@@ -15,4 +15,24 @@
 .circle img {
   width: 4em;
 }
+
+#go-to-top {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#go-to-top:hover {
+  -webkit-transition: ease-in-out 0.8s;
+  transition: ease-in-out 0.8s;
+  color: #000;
+  position: fixed;
+  bottom: 0;
+  right: 2%;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
 /*# sourceMappingURL=style.css.map */
