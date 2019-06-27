@@ -378,7 +378,7 @@
         <!-- Jumbotron Section: STOP-->
 
         <!-- Form: START-->
-        <form class="needs-validation mb-3" novalidate>
+        <form class="needs-validation mb-3" novalidate netlify netlify-honeypot="bot-field" data-netlify-recaptcha="true">
             <div class="form-row">
                 <div class="col-md-4 mb-3">
                     <!-- <label for="validationCustom01">First name</label> -->
@@ -448,6 +448,7 @@
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
             </div>
             <button class="btn btn-dark" type="submit">Let's talk :)</button>
+            <div data-netlify-recaptcha="true"></div>
         </form>
 
         <!-- Form: STOP-->
