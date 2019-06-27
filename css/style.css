@@ -3,6 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.dropdown-item:active {
+  background-color: #212529;
+}
+
 .navbar-brand {
   font-family: 'Lato', sans-serif;
   font-size: 2.2em;
