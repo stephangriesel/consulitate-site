@@ -28,6 +28,12 @@ html {
     width: 4em;
   }
 
+.page-section-main {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    height:92vh;
+}
 .page-section {
     display:flex;
     flex-direction:column;
