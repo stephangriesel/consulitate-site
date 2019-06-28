@@ -39,19 +39,19 @@
 
         </nav>
         <!-- Hero section: START -->
-        <div class="jumbotron support">
+        <div class="jumbotron page-section">
             <h1 class="display-4">Support.</h1>
             <p class="lead">Is your website down? Are you having email problems or maybe just something in general, we
                 are here for you.</p>
-            <p class="lead">Please complete form below. Provide as much information as possible, the more information
+            <p class="lead">Please complete <a href="#supportform">form below</a>. Provide as much information as possible, the more information
                 the quicker we can solve your query. </p>
             <p class="lead"><span class="larger-bold">:)</span></p>
         </div>
         <!-- Hero section: END -->
 
-        <div class="page-section-half">
+        <div class="page-section">
         <!-- Form: START-->
-        <form name="support" class="needs-validation mb-3" novalidate netlify netlify-honeypot="bot-field"
+        <form id="supportform" name="support" class="needs-validation mb-3" novalidate netlify netlify-honeypot="bot-field"
             data-netlify-recaptcha="true" id="support-form" action="/success.html">
             <div class="form-row">
                 <div class="col-md-4 mb-3">
@@ -102,7 +102,6 @@
         </div>
     </div>
     <!-- Footer: STOP -->
-
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

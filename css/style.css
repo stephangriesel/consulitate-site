@@ -1,4 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
+a {
+  color: #505253;
+}
+
+a:hover {
+  color: #212529;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -88,11 +96,5 @@ html {
   right: 2%;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-}
-
-@media screen and (max-width: 768px) {
-  .page-section-half {
-    height: 110vh;
-  }
 }
 /*# sourceMappingURL=style.css.map */
