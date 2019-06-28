@@ -44,54 +44,56 @@
             <p class="lead">Is your website down? Are you having email problems or maybe just something in general, we
                 are here for you.</p>
             <p class="lead">Please complete form below. Provide as much information as possible, the more information
-                the quicker we can solve your query. </p>
-            <p class="lead"><span class="larger-bold">:)</span></p>
+                the quicker we can solve your query.</p>
+            <p class="lead">Before we continue, let us just verify that you are actually a
+                person, please tick box below:</p>
+            <div data-netlify-recaptcha="true mb-3"></div>
             <form name="support" class="needs-validation mb-3" novalidate netlify netlify-honeypot="bot-field"
-            data-netlify-recaptcha="true" id="support-form" action="/success.html">
-            <div class="form-row">
-                <div class="col-md-4 mb-3">
-                    <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name" name="name"
-                        required>
-                    <div class="valid-feedback">
-                        Looks good!
+                data-netlify-recaptcha="true" id="support-form" action="/success.html">
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="Your Name"
+                            name="name" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4 mb-3">
-                    <input type="email" class="form-control" id="validationCustom02" placeholder="Your Email Address"
-                        name="email" required>
-                    <div class="valid-feedback">
-                        Looks good!
+                    <div class="col-md-4 mb-3">
+                        <input type="email" class="form-control" id="validationCustom02"
+                            placeholder="Your Email Address" name="email" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
                     </div>
-                </div>
-                <div class="form-group col-md-4 mb-3">
+                    <div class="form-group col-md-4 mb-3">
                         <select name="category" class="form-control" id="sel1">
-                          <option>I need help with...</option>
-                          <option>Website</option>
-                          <option>Email</option>
-                          <option>Support</option>
-                          <option>General</option>
+                            <option>I need help with...</option>
+                            <option>Website</option>
+                            <option>Email</option>
+                            <option>Support</option>
+                            <option>General</option>
                         </select>
-                      </div>
-            </div>
-            <div class="form-group">
+                    </div>
+                </div>
                 <div class="form-group">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"
-                        placeholder="Please provide as much information as possible"></textarea>
-                </div>
-                <div class="mb-3">
-                    <label>Screenshot:</label>
-                    <input type="file" class="form-control-file" id="myfile" name="myfile">
-                </div>
-                <div data-netlify-recaptcha="true mb-3"></div>
-                <button class="btn btn-dark mb-3" type="submit"><i class="fas fa-arrow-right"></i> Log support
-                    query</button>
-                    
-        </form>
+                    <div class="form-group">
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"
+                            placeholder="Please provide as much information as possible"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label>Screenshot:</label>
+                        <input type="file" class="form-control-file" id="myfile" name="myfile">
+                    </div>
+                    <button class="btn btn-dark mb-3" type="submit"><i class="fas fa-arrow-right"></i> Log support
+                        query</button>
+
+            </form>
 
         </div>
-        <!-- Hero section: END -->
+    
+    <!-- Hero section: END -->
 
-      
+
     </div>
     <!-- Footer: START -->
     <div class="card " id="footer">
