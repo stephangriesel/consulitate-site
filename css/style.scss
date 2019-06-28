@@ -45,7 +45,7 @@ html {
     display:flex;
     flex-direction:column;
     justify-content: center;
-    height:40vh;
+    height:50vh;
 }
 
 #support-form {
@@ -70,6 +70,14 @@ html {
     bottom:0;
     right:2%;
     transform: rotate(360deg);
+
+}
+
+
+@media screen and (max-width: 768px) { 
+.page-section-half {
+    height:50vh;
+}
 
 }
 
