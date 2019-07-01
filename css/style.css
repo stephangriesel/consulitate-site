@@ -111,4 +111,13 @@ html {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
+
+@media screen and (max-width: 500px) {
+  .jumbotron, .page-section {
+    height: 120vh;
+  }
+  #support-form {
+    height: 55vh;
+  }
+}
 /*# sourceMappingURL=style.css.map */
