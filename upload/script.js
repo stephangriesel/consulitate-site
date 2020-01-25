@@ -4,7 +4,7 @@ $("#upload_widget_opener").cloudinary_upload_widget(
         upload_preset: "qtzenltc",
         // cropping: "server",
         showAdvancedOptions: true,
-        folder: "skep",
+        folder: "consulitate",
         theme: "minimal",
         stylesheet: ".drag_content { border: 4px solid red }",
         multiple: true,
