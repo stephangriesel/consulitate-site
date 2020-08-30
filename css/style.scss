@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
+:root {
+    --mainGrey: #505253;
+    --mainLightGrey:#acacac;
+    --mainWhite: #FFFFFF;
+
+  }
+
 a {
     color:#505253;
 }
 a:hover {
     color:#212529;
+    transition: all 0.3s ease-in-out;
 }
 
 html {
@@ -19,6 +27,35 @@ html {
 .navbar-brand {
     font-family: 'Lato', sans-serif;    
     font-size: 2.2em;
+}
+
+.nav-item {
+    position: relative;
+    // font-weight:900;
+    font-size: 1.2em;
+    letter-spacing: 0.1em;
+    a {
+        color:var(--mainWhite) !important;
+    }
+    a:hover {
+        color:var(--mainLightGrey) !important;
+    }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+.top {
+    background: rgb(83,83,83);
+    background: linear-gradient(191deg, rgba(83,83,83,1) 0%, rgba(235,235,235,1) 35%, rgba(255,255,255,1) 100%);
+}
+
+.hero-img {
+    
+    img {
+        margin: 3em 0;
+    }
 }
 
 .jumbotron {
@@ -38,8 +75,12 @@ html {
 .page-section-main {
     display:flex;
     flex-direction:column;
+    align-items: flex-end;
     justify-content: center;
-    height:92vh;
+    height:70vh;
+    h1 {
+        font-size:3.5em;
+    }
 }
 .page-section {
     display:flex;
@@ -89,9 +130,18 @@ html {
 
 @media screen and (max-width: 500px) {
 
-    .jumbotron, .page-section {
+.jumbotron, .page-section {
         height:120vh;
-    }
+}
+
+.page-section-main {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
+        height:70vh;
+
+}
 
 #support-form {
     height:55vh;
