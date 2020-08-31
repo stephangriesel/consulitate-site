@@ -19,8 +19,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.wrapper {
+  overflow: hidden;
+}
+
 .dropdown-item:active {
   background-color: #212529;
+}
+
+.navbar {
+  padding: 2em;
 }
 
 .navbar-brand {
@@ -58,6 +66,10 @@ html {
   margin: 3em 0;
 }
 
+.jumbotron {
+  background: #f7f7f7 !important;
+}
+
 .jumbotron span {
   font-size: 2em;
 }
@@ -85,6 +97,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   height: 70vh;
+  padding-right: 2em;
 }
 
 .page-section-main h1 {
@@ -137,6 +150,20 @@ html {
   height: 30vh;
 }
 
+#contact .form-row, #contact .form-group {
+  margin: 0 2em;
+}
+
+#contact button {
+  margin: 0.5em 2em;
+}
+
+.footer {
+  background: #414141;
+  background: -webkit-gradient(linear, left bottom, left top, from(#414141), color-stop(37%, #949494), color-stop(82%, white));
+  background: linear-gradient(0deg, #414141 0%, #949494 37%, white 82%);
+}
+
 #go-to-top {
   display: none;
   position: fixed;
@@ -179,6 +206,11 @@ html {
   }
   #support-form {
     height: 55vh;
+  }
+  #go-to-top {
+    right: 10%;
+    font-size: 2em;
+    cursor: pointer;
   }
 }
 /*# sourceMappingURL=style.css.map */
