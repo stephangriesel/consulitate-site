@@ -89,7 +89,8 @@ html {
     flex-direction:column;
     align-items: flex-end;
     justify-content: center;
-    height:70vh;    
+    height:70vh;
+    margin:1.5em;
     h1 {
         font-size:3.5em;
     }
@@ -130,6 +131,20 @@ html {
     button {
         margin:0.5em 2em;
     }
+}
+
+// Success Page 
+
+.success-page {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.success-img {
+    margin-right:1.5em;
 }
 
 .footer {
