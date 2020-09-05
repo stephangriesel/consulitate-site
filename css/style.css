@@ -104,6 +104,10 @@ html {
   margin: 1.5em;
 }
 
+.page-section-main p {
+  text-align: right;
+}
+
 .page-section-main h1 {
   font-size: 3.5em;
 }
