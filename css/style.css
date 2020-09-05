@@ -23,6 +23,10 @@ html {
   overflow: hidden;
 }
 
+.wrapper p {
+  font-size: 1.5em;
+}
+
 .dropdown-item:active {
   background-color: #212529;
 }
@@ -97,7 +101,6 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   height: 70vh;
-  padding-right: 2em;
 }
 
 .page-section-main h1 {
@@ -184,10 +187,11 @@ html {
           transform: rotate(360deg);
 }
 
+.g-recaptcha {
+  padding-left: 30px;
+}
+
 @media screen and (max-width: 500px) {
-  .jumbotron, .page-section {
-    height: 120vh;
-  }
   .page-section-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -202,7 +206,10 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 70vh;
+    height: 100vh;
+  }
+  .page-section-main p {
+    text-align: center;
   }
   #support-form {
     height: 55vh;
