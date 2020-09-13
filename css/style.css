@@ -67,7 +67,7 @@ html {
 }
 
 .hero-img img {
-  margin: 3em 0;
+  margin: 3em 0 0.2em;
 }
 
 .jumbotron {
@@ -198,7 +198,7 @@ html {
   display: none;
   position: fixed;
   bottom: 0;
-  right: 2%;
+  right: 10%;
   font-size: 2em;
   cursor: pointer;
 }
@@ -209,7 +209,7 @@ html {
   color: #000;
   position: fixed;
   bottom: 0;
-  right: 2%;
+  right: 10%;
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
 }
