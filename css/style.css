@@ -257,7 +257,7 @@ html {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    height: 100vh;
+    height: 100%;
   }
   .page-section-main p {
     text-align: left;
