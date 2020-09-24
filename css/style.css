@@ -66,6 +66,12 @@ html {
   background: linear-gradient(191deg, #535353 0%, #ebebeb 35%, white 100%);
 }
 
+.hero-img {
+  -webkit-animation: fadein 2s 0.5s ease-out forwards;
+          animation: fadein 2s 0.5s ease-out forwards;
+  opacity: 0;
+}
+
 .hero-img img {
   margin: 3em 0 0.2em;
 }
@@ -218,6 +224,24 @@ html {
   padding-left: 30px;
 }
 
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .page-section-main {
     display: -webkit-box;
@@ -227,16 +251,16 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     height: 100vh;
   }
   .page-section-main p {
-    text-align: center;
+    text-align: left;
   }
   #support-form {
     height: 55vh;
