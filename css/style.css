@@ -17,13 +17,10 @@ a:hover {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-.wrapper {
-  overflow: hidden;
-}
-
-.wrapper p {
+html p {
   font-size: 1.5em;
 }
 
