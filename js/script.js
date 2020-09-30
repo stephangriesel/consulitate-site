@@ -31,12 +31,13 @@ $(function () {
   setLeftClass();
 
   var carouselRunning = true;
+  var carouselRestartTimeout;
 
   var interval = setInterval(function () {
     if (carouselRunning) {
       showNextClient();
     }
-  }, 4000);
+  }, 5000);
 
   function showNextClient() {
     if (currentIndex === lastIndex) {
@@ -55,6 +56,12 @@ $(function () {
     }
     var index = $('.client').index(target);
     updateState(index);
+
+    // clearTimeout(carouselRestartTimeout);
+    // carouselRunning = false;
+    // carouselRestartTimeout = setTimeout(function () {
+    //   carouselRunning = true;
+    // }, 10000);
   };
 
   function updateState(index) {
@@ -115,6 +122,14 @@ $(function () {
       $(allQuotes[lastIndex]).addClass('left');
     }
   }
+
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      carouselRunning = false;
+    } else {
+      carouselRunning = true;
+    }
+  })
 
 });
 
