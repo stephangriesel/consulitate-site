@@ -80,19 +80,40 @@ $(function () {
   }
 
   function generatePips() {
-
+    var listContainer = $('#client-carousel-pips').find('ul');
+    for (var i = lastIndex; i >= 0; i--) {
+      var newPip = $('<li class="pip"></li>');
+      $(listContainer).append(newPip);
+    }
+    updatePips();
   }
 
   function updatePips() {
+    $('#client-carousel-pips').find('.previous').removeClass('previous');
+    $('#client-carousel-pips').find('.current').removeClass('current');
+    $('#client-carousel-pips').find('.next').removeClass('next');
+    var allPips = $('#client-carousel-pips').find('.pip');
+    $(allPips[prevIndex]).addClass('previous');
+    $(allPips[currentIndex]).addClass('current');
+    $(allPips[nextIndex]).addClass('next');
 
   }
 
-  function showFromPip() {
+  function showFromPip(event) {
+    var index = $('#client-carousel-pips li').index(event.target);
+    updateState(index);
 
   }
 
   function setLeftClass() {
-
+    var allQuotes = $('#clients-carousel').find('.quote');
+    $('.quote.left').removeClass('left');
+    if (prevIndex > 0) {
+      var index = prevIndex - 1;
+      $(allQuotes[index]).addClass('left');
+    } else {
+      $(allQuotes[lastIndex]).addClass('left');
+    }
   }
 
 });
