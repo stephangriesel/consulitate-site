@@ -202,8 +202,6 @@ html p {
 
 .clients-carousel-container .clients-carousel .client-image {
   background-size: cover;
-  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5) inset;
-          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5) inset;
   height: 7em;
   position: absolute;
   top: -7em;
@@ -378,9 +376,17 @@ html p {
   .page-section-main p {
     text-align: left;
   }
+  .clients-carousel-container .clients-carousel {
+    height: 14em;
+    position: relative;
+    width: 100%;
+  }
   .clients-carousel-container {
-    height: 23em;
-    width: 30em;
+    height: 16.5em;
+    width: 6.5em;
+  }
+  .clients-carousel-container .client {
+    width: 8em;
   }
   #support-form {
     height: 55vh;
