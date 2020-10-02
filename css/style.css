@@ -169,8 +169,12 @@ html p {
   margin: 0.5em 2em;
 }
 
+.clients {
+  display: none;
+}
+
 .clients-carousel-container {
-  height: 23em;
+  height: 30em;
   width: 30em;
   margin: 0 auto;
   position: relative;
@@ -195,24 +199,24 @@ html p {
 }
 
 .clients-carousel-container .clients-carousel {
-  height: 22em;
+  height: 35em;
   position: relative;
   width: 100%;
 }
 
 .clients-carousel-container .clients-carousel .client-image {
   background-size: cover;
-  height: 7em;
+  height: 14em;
   position: absolute;
-  top: -7em;
+  top: -14em;
   left: calc(50% - 3.5em);
-  width: 7em;
+  width: 14em;
 }
 
 .client.previous {
   opacity: .5;
-  -webkit-transform: translate(-150%, -50%) scale(0.8);
-          transform: translate(-150%, -50%) scale(0.8);
+  -webkit-transform: translate(-220%, -50%) scale(0.8);
+          transform: translate(-220%, -50%) scale(0.8);
 }
 
 .client.current {
@@ -224,8 +228,8 @@ html p {
 
 .client.next {
   opacity: .5;
-  -webkit-transform: translate(50%, -50%) scale(0.8);
-          transform: translate(50%, -50%) scale(0.8);
+  -webkit-transform: translate(120%, -50%) scale(0.8);
+          transform: translate(120%, -50%) scale(0.8);
 }
 
 .client.left {
@@ -356,7 +360,7 @@ html p {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1300px) {
   .page-section-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -375,6 +379,12 @@ html p {
   }
   .page-section-main p {
     text-align: left;
+  }
+  .clients-carousel-wrapper {
+    display: none;
+  }
+  .clients {
+    display: block;
   }
   .clients-carousel-container .clients-carousel {
     height: 14em;
