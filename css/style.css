@@ -290,6 +290,10 @@ html p {
           transform: scale(1);
 }
 
+form {
+  max-width: 70em;
+}
+
 .success-page {
   display: -webkit-box;
   display: -ms-flexbox;
