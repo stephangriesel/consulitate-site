@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 :root {
   --mainGrey: #505253;
-  --mainLightGrey:#acacac;
-  --mainWhite: #FFFFFF;
+  --mainLightGrey: #acacac;
+  --mainWhite: #ffffff;
 }
 
 a {
@@ -34,7 +34,7 @@ html p {
 
 .navbar-brand {
   font-family: 'Lato', sans-serif;
-  font-size: 2.2em;
+  font-size: 3.5em;
 }
 
 .nav-item {
@@ -161,7 +161,8 @@ html p {
   height: 30vh;
 }
 
-#contact .form-row, #contact .form-group {
+#contact .form-row,
+#contact .form-group {
   margin: 0 2em;
 }
 
@@ -214,7 +215,7 @@ html p {
 }
 
 .client.previous {
-  opacity: .5;
+  opacity: 0.5;
   -webkit-transform: translate(-220%, -50%) scale(0.8);
           transform: translate(-220%, -50%) scale(0.8);
 }
@@ -227,7 +228,7 @@ html p {
 }
 
 .client.next {
-  opacity: .5;
+  opacity: 0.5;
   -webkit-transform: translate(120%, -50%) scale(0.8);
           transform: translate(120%, -50%) scale(0.8);
 }
@@ -257,7 +258,7 @@ html p {
   cursor: pointer;
   display: inline-block;
   height: 20px;
-  margin: 0 .1em;
+  margin: 0 0.1em;
   padding: 0;
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
@@ -279,7 +280,7 @@ html p {
 }
 
 .client-carousel-pips .pip.current {
-  background: #FFF;
+  background: #fff;
   cursor: default;
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
@@ -365,6 +366,10 @@ form {
 }
 
 @media screen and (max-width: 1300px) {
+  .navbar-brand {
+    font-family: 'Lato', sans-serif;
+    font-size: 2.5em;
+  }
   .page-section-main {
     display: -webkit-box;
     display: -ms-flexbox;
